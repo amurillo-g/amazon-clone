@@ -1,26 +1,34 @@
 import React from 'react'
 import './Header.css';
+import SearchIcon from '@mui/icons-material/Search';
+import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 
 function Header() {
   return (
     <div className='header'>
-      <img className='header__logo' src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="" />
+      <div>
+        <span className="header__logo">fashionBox</span>
+      </div>
       <div className="header__search">
-        <input type="text" className="header__search" />
-        {/* LOGO*/}
+        <input type="text" className="header__searchInput" />
+        <SearchIcon className='header__searchIcon' />
       </div>
       <div className="header__nav">
         <div className="header__option">
-          <span className="header__OptionLineOne">Hello Guest</span>
-          <span className="header_OptionLineTwo">Sign In</span> 
+          <span className="header__optionLineOne">Hello Guest</span>
+          <span className="header__optionLineTwo">Sign In</span> 
         </div>
         <div className="header__option">
-          <span className="header__OptionLineOne">Returns</span>
-          <span className="header_OptionLineTwo">& orders</span> 
+          <span className="header__optionLineOne">Returns</span>
+          <span className="header__optionLineTwo">& orders</span> 
         </div>
         <div className="header__option">
-          <span className="header__OptionLineOne">Your</span>
-          <span className="header_OptionLineTwo">Prime</span> 
+          <span className="header__optionLineOne">Your</span>
+          <span className="header__optionLineTwo">Prime</span> 
+        </div>
+        <div className="header__optionBasket">
+          <ShoppingBasketIcon  />
+          <span className="header__basketCount header__optionLineTwo" >0</span>
         </div>
       </div>
     </div>
