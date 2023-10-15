@@ -10,14 +10,14 @@ function Home() {
 
             <div className="home__row">
               <Product
-                id="54554564" 
-                title= "vestido sexy"
+                id="54554" 
+                title= "vestido sexy rojo"
                 price={102.99}
                 image="https://images.pexels.com/photos/4132651/pexels-photo-4132651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 rating={3}
               />
               <Product 
-                id="54554564" 
+                id="545564" 
                 title= "vestido sexy color verde con tirantes marca fashionbox"
                 price={102.99}
                 image="https://images.pexels.com/photos/4132651/pexels-photo-4132651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -26,19 +26,19 @@ function Home() {
 
             <div className="home__row">
               <Product 
-                id="54554564" 
+                id="5455464" 
                 title= "vestido sexy"
                 price={102.99}
                 image="https://images.pexels.com/photos/4132651/pexels-photo-4132651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               />
               <Product 
-                id="54554564" 
+                id="4554564" 
                 title= "vestido sexy"
                 price={102.99}
                 image="https://images.pexels.com/photos/4132651/pexels-photo-4132651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               />
               <Product 
-                id="54554564" 
+                id="5455464" 
                 title= "vestido sexy"
                 price={102.99}
                 image="https://images.pexels.com/photos/4132651/pexels-photo-4132651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -47,7 +47,7 @@ function Home() {
 
             <div className="home__row">
               <Product 
-                id="54554564" 
+                id="545545649" 
                 title= "vestido sexy"
                 price={102.99}
                 image="https://images.pexels.com/photos/4132651/pexels-photo-4132651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
