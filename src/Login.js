@@ -53,7 +53,7 @@ function Login() {
                 <input type="text" value={email} onChange={e => setEmail(e.target.value)}/>
 
                 <h5>Contraseña</h5>
-                <input type="pasword" value={password} onChange={e => setPassword(e.target.value)}/>
+                <input type="password" value={password} onChange={e => setPassword(e.target.value)}/>
 
                 <button type='summit' onClick={signIn} className='login__signInButton'>Iniciar Sesion</button>
             </form>

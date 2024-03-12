@@ -4,7 +4,6 @@ import { useStateValue } from './StateProvider'
 import CheckoutProduct from './CheckoutProduct'
 import { Link, useNavigate  } from 'react-router-dom' 
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js'
-import CurrencyFormat from 'react-currency-format'
 import { getBasketTotal } from './reducer'
 import axios from './axios'
 import { db } from './firebase'
@@ -127,17 +126,7 @@ function Payment() {
                     <form onSubmit={handleSubmit}>
                         <CardElement onChange={handleChange} />
                         <div className="payment__priceContainer">
-                            <CurrencyFormat 
-                                renderText={(value) => (
-                                    <h3>Total Orden {value} </h3>
-                                )}
-                                decimalScale={2}
-                                value={getBasketTotal(basket)}
-                                displayType={'text'}
-                                thousandSeparator={true}
-                                prefix={'$'}             
-                                />
-
+                            <h3>Total Orden {getBasketTotal(basket)}  </h3>
                             <button disabled={processing || disable || succeded}>
                                 <span>{processing ? <p>Processing</p> : "Buy Now"} </span>
                             </button>
